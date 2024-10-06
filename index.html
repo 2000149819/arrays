@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Arrays in JS</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <p id="result"></p>
+        <p id="display"></p>
+        <p id="updated_array"></p>
+        <p id="deleted"></p>
+        <p id="new_array"></p>
+        <p id="outcome"></p>
+        <p id="sorted"></p>
+        <p id="reversed"></p>
+        <p id="joined"></p>
+        <script>
+            var name="Avishka";
+            var names=["Shruthi", "Meera", "Aadhya", "Navya", "Sara"];
+            document.getElementById("demo").innerHTML=names;
+            document.getElementById("result").innerHTML=names[2];
+            document.getElementById("display").innerHTML=names[4];
+            names.push("Nisha");
+            document.getElementById("updated_array").innerHTML=names;
+            names.pop();
+            document.getElementById("deleted").innerHTML=names
+            var num=[57, 80, 64, 20, 17, 5, 26, 72, 85, 29]
+            document.getElementById("new_array").innerHTML=num;
+            num.push(175);
+            document.getElementById("outcome").innerHTML=num;
+            num.sort();
+            document.getElementById("sorted").innerHTML=num;
+            num.reverse();
+            document.getElementById("reversed").innerHTML=num;
+            document.getElementById("joined").innerHTML=names.join(" * ")
+        </script>
+    </body>
+</html>
